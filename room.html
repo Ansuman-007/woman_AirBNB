@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Your Room - Room Selection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+    }
+    .header-bg {
+      background-color: rgba(255, 135, 171, 0.9);
+    }
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .form-label {
+      color: #333333;
+    }
+    .form-input {
+      border-color: #dddddd;
+    }
+    .form-input:focus {
+      border-color: #ff87ab;
+    }
+    .form-submit {
+      background-color: #ff87ab;
+      transition: background-color 0.3s ease;
+    }
+    .form-submit:hover {
+      background-color: #ff6699;
+    }
+    /* Custom styles for property options */
+    .property-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+    .property-option:hover {
+      border-color: #ff87ab;
+    }
+    .property-option img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      margin-right: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .property-option:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-pink-500 py-4 header-bg">
+    <h1 class="text-3xl text-center text-white font-bold">Rent Your Room</h1>
+  </header>
+  <main class="container mx-auto py-8">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg form-container">
+      <form id="roomForm" action="time.html">
+        <h2 class="text-xl mb-4 text-gray-800">Select Room Type:</h2>
+       
+        <div class="property-option hover:shadow-lg">
+          <img src="./img/villa.png" alt="Villa" class="rounded-lg">
+          <label for="villa" class="form-label">Villa</label>
+          <input type="radio" id="villa" name="roomType" value="villa" class="ml-2 form-input">
+        </div>
+        <div class="property-option hover:shadow-lg">
+          <img src="./img/Apartment .webp" alt="Apartment" class="rounded-lg">
+          <label for="apartment" class="form-label">Apartment</label>
+          <input type="radio" id="apartment" name="roomType" value="apartment" class="ml-2 form-input">
+        </div>
+        
+        <div class="property-option hover:shadow-lg">
+          <img src="./img/Cottage.jpeg" alt="Cottage" class="rounded-lg">
+          <label for="cottage" class="form-label">Cottage</label>
+          <input type="radio" id="cottage" name="roomType" value="cottage" class="ml-2 form-input">
+        </div>
+        <div class="property-option hover:shadow-lg">
+          <img src="./img/Bungalow.jpeg" alt="Bungalow" class="rounded-lg">
+          <label for="bungalow" class="form-label">Bungalow</label>
+          <input type="radio" id="bungalow" name="roomType" value="bungalow" class="ml-2 form-input">
+        </div>
+        <div class="property-option hover:shadow-lg">
+          <img src="./img/Penthouse.avif" alt="Studio" class="rounded-lg">
+          <label for="studio" class="form-label">Penthouse</label>
+          <input type="radio" id="studio" name="roomType" value="studio" class="ml-2 form-input">
+        </div>
+        
+        <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg font-semibold form-submit">Next</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner  Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-purple-500 py-4">
+    <h1 class="text-3xl text-center text-white font-bold">Owner (Only Female) Dashboard</h1>
+  </header>
+  <main class="container mx-auto py-8">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl mb-4 text-purple-800">List Your Property</h2>
+      <form id="propertyForm">
+        <div class="mb-4">
+          <label for="propertyName" class="block mb-2">Property Name:</label>
+          <input type="text" id="propertyName" name="propertyName" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="propertyType" class="block mb-2">Property Type:</label>
+          <select id="propertyType" name="propertyType" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            <option value="" disabled selected>Select Property Type</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Villa">Villa</option>
+            <option value="House">House</option>
+            <option value="Condo">Condo</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="location" class="block mb-2">Location:</label>
+          <input type="text" id="location" name="location" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="description" class="block mb-2">Description:</label>
+          <textarea id="description" name="description" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none" required></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="price" class="block mb-2">Price:</label>
+          <input type="number" id="price" name="price" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-lg font-semibold">List Property</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Room Rental Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .input-group input[type="text"],
+    .input-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .input-group input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #ff6699;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .input-group input[type="submit"]:hover {
+      background-color: #ff4d80;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-2xl text-center font-bold mb-4">Login</h2>
+    <form action="login_process.php" method="POST">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+    <p class="text-center">Don't have an account? <a href="register.html" class="text-pink-500">Register here</a>.</p>
+  </div>
+</body>
+</html>

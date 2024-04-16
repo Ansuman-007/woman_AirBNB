@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Your Room - Location Selection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9fafb;
+      font-family: 'Roboto', sans-serif;
+    }
+    .header-bg {
+      background-color: #ff87ab;
+    }
+    .form-container {
+      background-color: #ffffff;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .form-label {
+      color: #333333;
+    }
+    .form-input {
+      border-color: #dddddd;
+    }
+    .form-input:focus {
+      border-color: #ff87ab;
+    }
+    .form-submit {
+      background-color: #ff87ab;
+    }
+    .form-submit:hover {
+      background-color: #ff6699;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-pink-500 py-4 header-bg">
+    <h1 class="text-3xl text-center text-white font-bold">Rent Your Room</h1>
+  </header>
+  <main class="container mx-auto py-8">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg form-container">
+      <form id="locationForm" action="room.html">
+        <div class="mb-6">
+          <label for="location" class="block mb-2 form-label">Select a City:</label>
+          <select id="location" name="location" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input" required>
+            <option value="" disabled selected>Select a city</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Visakhapatnam">Visakhapatnam</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Patna">Patna</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Indore">Indore</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Surat">Surat</option>
+            <option value="Mysore">Mysore</option>
+          </select>
+        </div>
+        <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg font-semibold form-submit">Next</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
